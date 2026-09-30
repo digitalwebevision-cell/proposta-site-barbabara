@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1400" width="2400" height="1400">
+<defs>
+  <radialGradient id="g" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#15191b"/><stop offset="1" stop-color="#0d0f10"/></radialGradient>
+  <radialGradient id="v" cx="50%" cy="50%" r="70%"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient>
+</defs>
+<rect width="100%" height="100%" fill="url(#g)"/>
+  <g>
+  <circle cx="1200" cy="700" r="294" fill="none" stroke="#ece8e1" stroke-opacity="0.45" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="0 14"/>
+  <circle cx="1200" cy="700" r="567" fill="none" stroke="#3fe0d0" stroke-opacity="0.55" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 12"/>
+  <path d="M1200 607.6 Q1200 700 1292.4 700 Q1200 700 1200 792.4 Q1200 700 1107.6 700 Q1200 700 1200 607.6Z" fill="#3fe0d0"/>
+  <g>
+  <path id="sluqcf" d="M1309.2 292.6 A420 420 0 1 1 990 334.6" fill="none"/>
+  <use href="#sluqcf" stroke="#ece8e1" stroke-width="100.8" stroke-linecap="round"/>
+  <use href="#sluqcf" stroke="#15191b" stroke-width="94.8" stroke-linecap="round"/>
+  <use href="#sluqcf" stroke="#ece8e1" stroke-opacity=".55" stroke-width="55.440000000000005" stroke-dasharray="1.6 18.5"/>
+  <use href="#sluqcf" stroke="#3fe0d0" stroke-opacity=".7" stroke-width="2"/>
+  <g transform="translate(1309.2 292.6) rotate(15) scale(1.68)">
+    <path d="M-6 -6 L-100 0 M-100 0 L-118 -10 M-100 0 L-118 10" fill="none" stroke="#3fe0d0" stroke-width="3" stroke-linecap="round" transform="translate(-4 0)"/>
+    <path d="M6 -30 C-26 -38 -62 -24 -80 0 C-62 24 -26 38 6 30 Z" fill="#15191b" stroke="#ece8e1" stroke-width="3"/>
+    <path d="M-10 -16 C-30 -18 -48 -12 -62 0" fill="none" stroke="#ece8e1" stroke-opacity=".5" stroke-width="2"/>
+    <ellipse cx="-44" cy="-12" rx="7" ry="4.5" fill="#3fe0d0"/>
+    <ellipse cx="-44" cy="12" rx="7" ry="4.5" fill="#3fe0d0"/>
+  </g>
+</g>
+</g>
+  <circle cx="1200" cy="700" r="640" fill="none" stroke="#ece8e1" stroke-opacity="0.2" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 16"/>
+<rect width="100%" height="100%" fill="url(#v)"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+<defs>
+  <radialGradient id="g" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#15191b"/><stop offset="1" stop-color="#0d0f10"/></radialGradient>
+  <radialGradient id="v" cx="50%" cy="50%" r="70%"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient>
+</defs>
+<rect width="100%" height="100%" fill="url(#g)"/>
+<g fill="none" stroke="#ece8e1" stroke-width="3">
+  <path d="M600 555 C580 660 630 720 600 795"/>
+  <path d="M594 645 C480 600 435 660 420 690 C480 705 555 690 594 645Z" fill="#15191b"/>
+  <path d="M604 705 C705 660 750 705 765 735 C705 750 645 735 604 705Z" fill="#15191b"/>
+  <g fill="#15191b"><ellipse cx="600" cy="327" rx="75" ry="54" transform="rotate(0 600 327)"/><ellipse cx="688.4" cy="391.3" rx="75" ry="54" transform="rotate(72 688.4 391.3)"/><ellipse cx="654.7" cy="495.2" rx="75" ry="54" transform="rotate(144 654.7 495.2)"/><ellipse cx="545.3" cy="495.2" rx="75" ry="54" transform="rotate(216 545.3 495.2)"/><ellipse cx="511.6" cy="391.3" rx="75" ry="54" transform="rotate(288 511.6 391.3)"/></g>
+  <circle cx="600" cy="420" r="90" fill="#15191b"/>
+  <path d="M600 420 L600 420 L601.5 420.4 L602.7 421.5 L603.4 423.2 L603.4 425.3 L602.5 427.4 L600.7 429.4 L598 430.8 L594.8 431.4 L591.2 430.9 L587.5 429.4 L584.1 426.6 L581.4 422.6 L579.8 417.8 L579.5 412.3 L580.8 406.6 L583.7 401.1 L588.1 396.2 L594.1 392.5 L601.1 390.3 L608.9 390 L616.8 391.8 L624.4 395.7 L631 401.7 L636 409.5 L639.1 418.7 L639.7 428.7 L637.7 439 L633 448.8 L625.7 457.3 L616.3 464 L605 468.2 L592.7 469.5 L580.1 467.6 L568 462.4 L557.3 454.2 L548.7 443.2 L543 430.1 L540.8 415.5 L542.2 400.5 L547.5 386 L556.5 372.9 L568.8 362.2 L583.7 354.8 L600.3 351.2 L617.7 351.9 L634.8 357.1 L650.3 366.5 L663.3 379.7 L672.8 396.2 L678 414.8 L678.4 434.6 L673.8 454.2" stroke="#3fe0d0" stroke-width="2.5"/>
+</g>
+<rect width="100%" height="100%" fill="url(#v)"/>
+<text x="600" y="1152" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="28.571428571428573" fill="rgba(236,232,225,.35)" letter-spacing="2">Trabalho 03</text>
+</svg>

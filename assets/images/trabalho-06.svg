@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+<defs>
+  <radialGradient id="g" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#15191b"/><stop offset="1" stop-color="#0d0f10"/></radialGradient>
+  <radialGradient id="v" cx="50%" cy="50%" r="70%"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient>
+</defs>
+<rect width="100%" height="100%" fill="url(#g)"/>
+<g fill="none" stroke="#ece8e1" stroke-width="3">
+  <g transform="translate(600 600) scale(1 1)">
+    <path d="M6 -20 C60 -140 288 -216 300 -84 C288 -10 144 10 6 0Z" fill="#15191b"/>
+    <path d="M6 8 C60 20 240 48 204 168 C144 240 80 168 6 30Z" fill="#15191b"/>
+    <circle cx="172.79999999999998" cy="-100.8" r="38.4" stroke="#3fe0d0"/>
+    <circle cx="172.79999999999998" cy="-100.8" r="14.399999999999999" fill="#3fe0d0" stroke="none"/>
+    <path d="M20 -8 C80 -60 144 -192 252 -132" stroke-opacity=".45"/>
+    <path d="M20 14 C70 40 120 120 168 148.8" stroke-opacity=".45"/>
+  </g><g transform="translate(600 600) scale(-1 1)">
+    <path d="M6 -20 C60 -140 288 -216 300 -84 C288 -10 144 10 6 0Z" fill="#15191b"/>
+    <path d="M6 8 C60 20 240 48 204 168 C144 240 80 168 6 30Z" fill="#15191b"/>
+    <circle cx="172.79999999999998" cy="-100.8" r="38.4" stroke="#3fe0d0"/>
+    <circle cx="172.79999999999998" cy="-100.8" r="14.399999999999999" fill="#3fe0d0" stroke="none"/>
+    <path d="M20 -8 C80 -60 144 -192 252 -132" stroke-opacity=".45"/>
+    <path d="M20 14 C70 40 120 120 168 148.8" stroke-opacity=".45"/>
+  </g>
+  <ellipse cx="600" cy="620" rx="14" ry="132" fill="#15191b"/>
+  <circle cx="600" cy="560" r="16" fill="#15191b"/>
+  <path d="M594 546 C570 490 540 480 520 490 M606 546 C630 490 660 480 680 490"/>
+  <circle cx="600" cy="620" r="72" fill="none" stroke="#3fe0d0" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 12"/>
+</g>
+<rect width="100%" height="100%" fill="url(#v)"/>
+<text x="600" y="1152" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="28.571428571428573" fill="rgba(236,232,225,.35)" letter-spacing="2">Trabalho 06</text>
+</svg>

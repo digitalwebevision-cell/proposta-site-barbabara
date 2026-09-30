@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+<defs>
+  <radialGradient id="g" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#15191b"/><stop offset="1" stop-color="#0d0f10"/></radialGradient>
+  <radialGradient id="v" cx="50%" cy="50%" r="70%"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient>
+</defs>
+<rect width="100%" height="100%" fill="url(#g)"/>
+<g>
+  <path d="M620 360 A240 240 0 1 0 620 840 A132 240 0 0 1 620 360 Z" fill="none" stroke="#ece8e1" stroke-width="3"/>
+  <circle cx="543.2" cy="600" r="172.79999999999998" fill="none" stroke="#ece8e1" stroke-opacity="0.45" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 12"/>
+  <path d="M788 439.2 Q788 468 816.8 468 Q788 468 788 496.8 Q788 468 759.2 468 Q788 468 788 439.2Z" fill="#3fe0d0"/>
+  <path d="M848 631.2 Q848 648 864.8 648 Q848 648 848 664.8 Q848 648 831.2 648 Q848 648 848 631.2Z" fill="#ece8e1"/>
+  <path d="M740 768 Q740 780 752 780 Q740 780 740 792 Q740 780 728 780 Q740 780 740 768Z" fill="#ece8e1"/>
+</g>
+<rect width="100%" height="100%" fill="url(#v)"/>
+<text x="600" y="1152" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="28.571428571428573" fill="rgba(236,232,225,.35)" letter-spacing="2">Trabalho 02</text>
+</svg>
