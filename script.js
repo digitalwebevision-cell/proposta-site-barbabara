@@ -153,8 +153,32 @@ const spy = new IntersectionObserver(
 );
 $$("main section[id]").forEach((s) => spy.observe(s));
 
-/* ---------- Rolagem: header, parallax sutil e botão fixo ---------- */
+/* ---------- Cena fixa "Por que Víbora": texto em etapas e troca de pele ----------
+   Só é ativada com movimento liberado e tela com altura suficiente para o texto;
+   nos demais casos a seção permanece como texto comum (ver .has-pin no style.css). */
+const clamp = (n, min, max) => Math.min(max, Math.max(min, n));
+const meaning = $("#por-que-vibora");
+const beats = $$(".beat", meaning);
+const beatCount = $("#beat-n");
+const pinned = !reduceMotion && window.innerHeight >= 560;
+if (pinned) document.documentElement.classList.add("has-pin");
+
+function updateMeaning(vh) {
+  const rect = meaning.getBoundingClientRect();
+  const progress = clamp(-rect.top / (rect.height - vh), 0, 1);
+  const active = Math.min(beats.length - 1, Math.floor(progress * beats.length));
+  beats.forEach((beat, i) => {
+    beat.classList.toggle("is-active", i === active);
+    beat.classList.toggle("is-past", i < active);
+  });
+  beatCount.textContent = String(active + 1).padStart(2, "0");
+  // A pele troca enquanto a segunda etapa (a que fala da troca de pele) está na tela
+  meaning.style.setProperty("--shed", clamp((progress - 0.28) / 0.2, 0, 1).toFixed(3));
+}
+
+/* ---------- Rolagem: header, parallax sutil, botão fixo e serpente de progresso ---------- */
 const parallaxItems = reduceMotion ? [] : $$("[data-parallax]");
+const serpent = $(".serpent");
 let ticking = false;
 
 function onScroll() {
@@ -166,6 +190,13 @@ function onScroll() {
   const pastHero = y > hero.offsetHeight * 0.8;
   const nearFinal = finalSection.getBoundingClientRect().top < vh;
   stickyCta.classList.toggle("is-visible", pastHero && !nearFinal);
+
+  if (pinned) updateMeaning(vh);
+
+  // Serpente: o traço cresce com a rolagem e a cabeça acompanha a ondulação (4 ondas na altura da tela)
+  const scrolled = clamp(y / (document.documentElement.scrollHeight - vh), 0, 1);
+  serpent.style.setProperty("--scroll", scrolled.toFixed(4));
+  serpent.style.setProperty("--head-x", `${(10 + 4 * Math.sin(scrolled * 8 * Math.PI)).toFixed(2)}px`);
 
   parallaxItems.forEach((el) => {
     const rect = el.parentElement.getBoundingClientRect();
@@ -325,15 +356,60 @@ $$(".acc").forEach((item) => {
   });
 });
 
-/* ---------- Formulários (Eventos e Guest Spot) ----------
+/* ---------- Além do estúdio: abas (Eventos, Guest spot, Parcerias) com um único formulário ----------
+   Para mudar os textos de cada aba, edite TAB_COPY. Os campos de cada aba ficam no HTML,
+   em <div class="form__group" data-for="...">: os das abas inativas são ocultados e desativados. */
+const TAB_COPY = {
+  eventos: { form: "Evento", word: "Eventos", submit: "Contratar para meu evento" },
+  guest: { form: "Guest Spot", word: "Guest", submit: "Convidar para guest" },
+  parcerias: { form: "Parceria", word: "Collabs", submit: "Propor uma parceria" },
+};
+const tabs = $$(".tab");
+const workForm = $("#work-form");
+
+function setTab(name, { focus = false } = {}) {
+  tabs.forEach((tab) => {
+    const on = tab.dataset.tab === name;
+    tab.setAttribute("aria-selected", String(on));
+    tab.tabIndex = on ? 0 : -1;
+    $(`#${tab.getAttribute("aria-controls")}`).hidden = !on;
+    if (on && focus) tab.focus();
+  });
+  $$(".form__group", workForm).forEach((group) => {
+    const on = group.dataset.for === name;
+    group.hidden = !on;
+    $$("input", group).forEach((input) => { input.disabled = !on; });
+  });
+  const copy = TAB_COPY[name];
+  workForm.dataset.form = copy.form;
+  $("#work-kind").textContent = copy.form;
+  $("#work-submit").textContent = copy.submit;
+  $("#guest-word").textContent = copy.word;
+  $$(".is-invalid", workForm).forEach((field) => field.classList.remove("is-invalid"));
+  $(".form__status", workForm).textContent = "";
+}
+tabs.forEach((tab, i) => {
+  tab.addEventListener("click", () => setTab(tab.dataset.tab));
+  tab.addEventListener("keydown", (e) => {
+    const step = { ArrowRight: 1, ArrowLeft: -1 }[e.key];
+    if (!step) return;
+    e.preventDefault();
+    setTab(tabs[(i + step + tabs.length) % tabs.length].dataset.tab, { focus: true });
+  });
+});
+setTab("eventos");
+
+/* ---------- Formulário ----------
    Não há servidor: a mensagem é montada com os campos e enviada
    pelo canal configurado em CONFIG (WhatsApp, e-mail ou Instagram). */
 $$("form[data-form]").forEach((form) => {
   const status = $(".form__status", form);
+  // Campos de abas inativas estão desativados e ficam fora da validação e da mensagem
+  const fields = () => $$("input, textarea", form).filter((f) => !f.disabled);
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     let valid = true;
-    $$("input, textarea", form).forEach((field) => {
+    fields().forEach((field) => {
       const ok = field.checkValidity() && (!field.required || field.value.trim() !== "");
       field.closest(".field").classList.toggle("is-invalid", !ok);
       field.toggleAttribute("aria-invalid", !ok);
@@ -344,7 +420,7 @@ $$("form[data-form]").forEach((form) => {
       $(".is-invalid input, .is-invalid textarea", form)?.focus();
       return;
     }
-    const lines = $$("input, textarea", form)
+    const lines = fields()
       .filter((f) => f.value.trim())
       .map((f) => {
         let value = f.value.trim();

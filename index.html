@@ -73,11 +73,11 @@
       <nav class="nav" id="nav" aria-label="Navegação principal">
         <ul class="nav__list">
           <li><a href="#inicio" class="nav__link">Início</a></li>
-          <li><a href="#sobre" class="nav__link">Sobre</a></li>
           <li><a href="#trabalhos" class="nav__link">Trabalhos</a></li>
+          <li><a href="#por-que-vibora" class="nav__link">O nome</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
           <li><a href="#promocoes" class="nav__link">Promoções</a></li>
-          <li><a href="#eventos" class="nav__link">Eventos</a></li>
-          <li><a href="#guest" class="nav__link">Guest</a></li>
+          <li><a href="#parcerias" class="nav__link">Parcerias</a></li>
           <li><a href="#contato" class="nav__link">Contato</a></li>
         </ul>
         <div class="nav__mobile-foot">
@@ -99,6 +99,7 @@
   <main id="conteudo">
 
     <!-- ===================== 01 · HERO ===================== -->
+    <!-- Abertura: cortina que se abre, título revelado por máscara e um único botão -->
     <section class="hero" id="inicio" aria-label="Apresentação">
       <div class="hero__media" data-parallax="0.18">
         <!-- PLACEHOLDER: substituir por uma fotografia real da marca (ex.: assets/images/hero.jpg, 2400px de largura) -->
@@ -107,32 +108,20 @@
       <div class="hero__veil" aria-hidden="true"></div>
 
       <div class="hero__content container">
-        <p class="eyebrow reveal">Tatuagem · Arte · Pele</p>
-        <h1 class="hero__title reveal" data-delay="1">
+        <h1 class="hero__title">
           <span class="hero__title-main">Víbora</span>
           <span class="hero__title-sub">Ink</span>
         </h1>
-        <p class="hero__sign reveal" data-delay="2">Cada pele conta uma história.<br><em>Qual é a sua?</em></p>
-        <p class="hero__text reveal" data-delay="3">Tatuagem pensada como arte: cada traço nasce da sua ideia e ganha forma para acompanhar você por toda a vida.</p>
-        <div class="hero__actions reveal" data-delay="4">
+        <p class="hero__sign">Cada pele conta uma história.<br><em>Qual é a sua?</em></p>
+        <div class="hero__actions">
           <a href="#agendar" class="btn btn--primary">Agendar tatuagem <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          <a href="#trabalhos" class="btn btn--ghost">Ver trabalhos</a>
+          <a href="#trabalhos" class="link-line">Ver trabalhos <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
       </div>
 
-      <a href="#sobre" class="hero__scroll" aria-label="Rolar para a próxima seção">
+      <a href="#trabalhos" class="hero__scroll" aria-label="Rolar para a próxima seção">
         <span>Role</span>
         <i aria-hidden="true"></i>
-      </a>
-      <a href="https://www.instagram.com/viboraink/" target="_blank" rel="noopener" class="hero__side">@viboraink</a>
-
-      <!-- Selo giratório, no estilo dos carimbos de estúdio -->
-      <a href="#agendar" class="seal" aria-label="Agendar tatuagem">
-        <svg class="seal__ring" viewBox="0 0 200 200" aria-hidden="true">
-          <defs><path id="seal-path" d="M100 100m-78 0a78 78 0 1 1 156 0a78 78 0 1 1-156 0"/></defs>
-          <text><textPath href="#seal-path" textLength="486">Víbora Ink ✦ Tattoo artist ✦ Arte na pele ✦</textPath></text>
-        </svg>
-        <span class="seal__core" aria-hidden="true"><svg><use href="#i-snake"/></svg></span>
       </a>
     </section>
 
@@ -150,83 +139,11 @@
       </div>
     </div>
 
-    <!-- ===================== 02 · SOBRE ===================== -->
-    <section class="section about" id="sobre" aria-labelledby="sobre-titulo">
-      <div class="container about__grid">
-        <figure class="about__photo reveal">
-          <!-- Foto recortada do material da marca. Ideal: substituir pelo arquivo original em alta resolução (quadrado, mín. 1000px) -->
-          <img src="assets/images/tatuadora.jpg" alt="Retrato em preto e branco da tatuadora da Víbora Ink, com franja, piercings e a mão apoiada no queixo" loading="lazy" width="694" height="694">
-          <figcaption class="about__caption">Víbora Ink · desde 2023</figcaption>
-        </figure>
-
-        <div class="about__text">
-          <p class="eyebrow reveal"><span class="idx">02</span> Sobre mim</p>
-          <h2 class="title reveal" id="sobre-titulo">Sobre a <em>Víbora</em></h2>
-
-          <p class="lead reveal">Nascida em 1999, sempre fui apaixonada por arte. Aos 4 anos criei meu primeiro gibi e, na adolescência, explorei esboços, realismo, aquarela, acrílica… tudo o que pudesse traduzir o que eu sentia em formas e cores.</p>
-          <p class="reveal">Por um tempo, a vida me levou por outros caminhos: atuei por quatro anos na área de biomedicina, mas algo em mim sempre pedia mais arte, mais liberdade.</p>
-          <p class="reveal">Em outubro de 2023, ao marcar uma sessão com minha irmã e uma grande amiga, tatuadora e artista plástica, encontrei o empurrão que faltava. Com pouco mais de uma semana de aulas, tatuei pela primeira vez em pele humana: o braço da própria professora. A tatuagem ficou linda, e naquele momento entendi que tinha encontrado meu propósito.</p>
-          <p class="reveal">Pouco depois, uma viagem a Portugal mudou minha vida. Passei por Mafra, Lisboa, Sintra, Paço de Arcos e Covilhã: quinze meses intensos, de muito aprendizado. Apesar da saudade e das noites difíceis, cada sorriso dos clientes me lembrava por que escolhi esse caminho.</p>
-          <p class="reveal">No fim de 2024 voltei ao Brasil com bagagem, coragem e ainda mais paixão. Hoje, meu maior desejo é levar minha arte para o mundo, eternizando histórias, a minha e a sua, na pele.</p>
-
-          <blockquote class="about__quote reveal">
-            <p>Cada pele conta uma história. <em>Qual é a sua?</em></p>
-          </blockquote>
-
-          <dl class="facts reveal">
-            <div class="facts__item">
-              <dt>Tatuando desde</dt>
-              <dd>Outubro de 2023</dd>
-            </div>
-            <div class="facts__item">
-              <dt>Trajetória</dt>
-              <dd>Brasil · Portugal</dd>
-            </div>
-            <div class="facts__item facts__item--wide">
-              <dt>Estilos</dt>
-              <dd>Fineline, Blackwork, Sketch, Lettering, Pontilhismo e Cybertattoo</dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-
-      <!--
-        COMPROMISSOS: textos baseados no processo descrito no site.
-        PLACEHOLDER: se a tatuadora confirmar, incluir um item sobre biossegurança
-        (material descartável, esterilização, licença sanitária), que passa muita confiança.
-      -->
-      <ul class="container pillars" aria-label="Como a Víbora Ink trabalha">
-        <li class="pillar reveal"><span class="pillar__n">i.</span><h3>Arte autoral</h3><p>Cada projeto é desenhado a partir da sua ideia, nunca copiado.</p></li>
-        <li class="pillar reveal" data-delay="1"><span class="pillar__n">ii.</span><h3>Atendimento próximo</h3><p>Conversa aberta do primeiro contato até o dia da sessão.</p></li>
-        <li class="pillar reveal" data-delay="2"><span class="pillar__n">iii.</span><h3>Planejamento</h3><p>Tamanho, local do corpo e detalhes alinhados antes de começar.</p></li>
-        <li class="pillar reveal" data-delay="3"><span class="pillar__n">iv.</span><h3>Pós-tatuagem</h3><p>Orientações de cuidado para uma cicatrização bonita.</p></li>
-      </ul>
-    </section>
-
-    <!-- ===================== O NOME · POR QUE VÍBORA ===================== -->
-    <section class="section meaning" id="por-que-vibora" aria-labelledby="vibora-titulo">
-      <div class="container meaning__grid">
-        <div class="meaning__art reveal" aria-hidden="true">
-          <img src="assets/images/simbolo-vibora.svg" alt="" loading="lazy" width="1000" height="1000">
-        </div>
-        <div class="meaning__text">
-          <p class="eyebrow reveal">O nome</p>
-          <h2 class="title title--lg reveal" id="vibora-titulo">E por que <em>“Víbora”?</em></h2>
-          <p class="lead reveal">A víbora, associada à tatuagem, é um símbolo vivo de transformação, tanto para quem tatua quanto para quem recebe a arte.</p>
-          <p class="reveal">Assim como a víbora troca de pele para crescer, a tatuagem marca a pele como um ato de renascimento. Cada traço é um rito, um corte simbólico entre quem a pessoa era e quem escolhe ser dali em diante. Com seu veneno paradoxal, capaz de ferir ou curar, ela reflete o poder da tatuagem: uma armadura de proteção, um grito de liberdade ou um amuleto silencioso de força interior.</p>
-          <p class="reveal">No plano espiritual, representa sabedoria oculta e poder latente: o silêncio também é força, e a beleza caminha lado a lado com o perigo. Para a arte, é um espelho do processo criativo: preciso, meditativo, visceral. Ambas são artistas da pele, uma no sentido literal, outra no natural.</p>
-          <blockquote class="about__quote reveal">
-            <p>Mudança dói, mas liberta. Carregar um símbolo é <em>carregar uma história.</em></p>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== 03 · TRABALHOS ===================== -->
+    <!-- ===================== 02 · TRABALHOS ===================== -->
     <section class="section works" id="trabalhos" aria-labelledby="trabalhos-titulo">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow reveal"><span class="idx">03</span> Portfólio</p>
+          <p class="eyebrow reveal"><span class="idx">02</span> Portfólio</p>
           <h2 class="title title--xl reveal" id="trabalhos-titulo">Trabalhos</h2>
           <svg class="ornament reveal" aria-hidden="true"><use href="#i-ornament"/></svg>
           <p class="section-head__sub reveal"><em>Arte que ganha vida na pele.</em></p>
@@ -275,15 +192,120 @@
         <div class="works__more reveal">
           <a href="https://www.instagram.com/viboraink/" target="_blank" rel="noopener" class="link-line">Ver mais no Instagram <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
+
+        <!--
+          DEPOIMENTOS: componente pronto para avaliações REAIS de clientes.
+          Remover o atributo hidden e duplicar <figure class="testimonial"> para cada avaliação autorizada.
+        -->
+        <div class="testimonials" hidden>
+          <figure class="testimonial">
+            <blockquote><p>Texto da avaliação real do cliente.</p></blockquote>
+            <figcaption>Nome do cliente <span>· tatuagem realizada</span></figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
-    <!-- ===================== 04 · PROMOÇÕES ===================== -->
+    <!-- ===================== 03 · O NOME · POR QUE VÍBORA ===================== -->
+    <!--
+      CENA FIXA: com JavaScript, a seção fica presa na tela e o texto avança em etapas (.beat).
+      Na segunda etapa acontece a "troca de pele": o fundo passa do preto ao papel.
+      Sem JavaScript ou com movimento reduzido, vira uma seção de texto comum.
+    -->
+    <section class="meaning" id="por-que-vibora" aria-labelledby="vibora-titulo">
+      <div class="meaning__stage">
+        <div class="meaning__skin" aria-hidden="true"></div>
+        <div class="container meaning__grid">
+          <div class="meaning__art" aria-hidden="true">
+            <img src="assets/images/simbolo-vibora.svg" alt="" loading="lazy" width="1000" height="1000">
+          </div>
+          <div class="meaning__text">
+            <div class="meaning__beats">
+              <div class="beat is-active">
+                <p class="eyebrow"><span class="idx">03</span> O nome</p>
+                <h2 class="title title--lg" id="vibora-titulo">E por que <em>“Víbora”?</em></h2>
+                <p class="lead">A víbora, associada à tatuagem, é um símbolo vivo de transformação, tanto para quem tatua quanto para quem recebe a arte.</p>
+              </div>
+              <div class="beat">
+                <p>Assim como a víbora troca de pele para crescer, a tatuagem marca a pele como um ato de renascimento. Cada traço é um rito, um corte simbólico entre quem a pessoa era e quem escolhe ser dali em diante. Com seu veneno paradoxal, capaz de ferir ou curar, ela reflete o poder da tatuagem: uma armadura de proteção, um grito de liberdade ou um amuleto silencioso de força interior.</p>
+              </div>
+              <div class="beat">
+                <p>No plano espiritual, representa sabedoria oculta e poder latente: o silêncio também é força, e a beleza caminha lado a lado com o perigo. Para a arte, é um espelho do processo criativo: preciso, meditativo, visceral. Ambas são artistas da pele, uma no sentido literal, outra no natural.</p>
+              </div>
+              <div class="beat">
+                <blockquote class="meaning__quote">
+                  <p>Mudança dói, mas liberta. Carregar um símbolo é <em>carregar uma história.</em></p>
+                </blockquote>
+              </div>
+            </div>
+            <p class="meaning__count" aria-hidden="true"><span id="beat-n">01</span> / 04</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 04 · SOBRE ===================== -->
+    <section class="section about" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="container about__grid">
+        <figure class="about__photo reveal">
+          <!-- Foto recortada do material da marca. Ideal: substituir pelo arquivo original em alta resolução (quadrado, mín. 1000px) -->
+          <img src="assets/images/tatuadora.jpg" alt="Retrato em preto e branco da tatuadora da Víbora Ink, com franja, piercings e a mão apoiada no queixo" loading="lazy" width="694" height="694">
+          <figcaption class="about__caption">Víbora Ink · desde 2023</figcaption>
+        </figure>
+
+        <div class="about__text">
+          <p class="eyebrow reveal"><span class="idx">04</span> Sobre mim</p>
+          <h2 class="title reveal" id="sobre-titulo">Sobre a <em>Víbora</em></h2>
+
+          <!-- LINHA DO TEMPO: o texto é o original da tatuadora; os rótulos (story__when) podem ser ajustados -->
+          <ol class="story">
+            <li class="story__item reveal"><span class="story__when">1999</span><p>Nascida em 1999, sempre fui apaixonada por arte. Aos 4 anos criei meu primeiro gibi e, na adolescência, explorei esboços, realismo, aquarela, acrílica… tudo o que pudesse traduzir o que eu sentia em formas e cores.</p></li>
+            <li class="story__item reveal"><span class="story__when">Outro caminho</span><p>Por um tempo, a vida me levou por outros caminhos: atuei por quatro anos na área de biomedicina, mas algo em mim sempre pedia mais arte, mais liberdade.</p></li>
+            <li class="story__item reveal"><span class="story__when">Outubro de 2023</span><p>Em outubro de 2023, ao marcar uma sessão com minha irmã e uma grande amiga, tatuadora e artista plástica, encontrei o empurrão que faltava. Com pouco mais de uma semana de aulas, tatuei pela primeira vez em pele humana: o braço da própria professora. A tatuagem ficou linda, e naquele momento entendi que tinha encontrado meu propósito.</p></li>
+            <li class="story__item reveal"><span class="story__when">Portugal</span><p>Pouco depois, uma viagem a Portugal mudou minha vida. Passei por Mafra, Lisboa, Sintra, Paço de Arcos e Covilhã: quinze meses intensos, de muito aprendizado. Apesar da saudade e das noites difíceis, cada sorriso dos clientes me lembrava por que escolhi esse caminho.</p></li>
+            <li class="story__item reveal"><span class="story__when">2024 · hoje</span><p>No fim de 2024 voltei ao Brasil com bagagem, coragem e ainda mais paixão. Hoje, meu maior desejo é levar minha arte para o mundo, eternizando histórias, a minha e a sua, na pele.</p></li>
+          </ol>
+
+          <blockquote class="about__quote reveal">
+            <p>Cada pele conta uma história. <em>Qual é a sua?</em></p>
+          </blockquote>
+
+          <dl class="facts reveal">
+            <div class="facts__item">
+              <dt>Tatuando desde</dt>
+              <dd>Outubro de 2023</dd>
+            </div>
+            <div class="facts__item">
+              <dt>Trajetória</dt>
+              <dd>Brasil · Portugal</dd>
+            </div>
+            <div class="facts__item facts__item--wide">
+              <dt>Estilos</dt>
+              <dd>Fineline, Blackwork, Sketch, Lettering, Pontilhismo e Cybertattoo</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+      <!--
+        COMPROMISSOS: textos baseados no processo descrito no site.
+        PLACEHOLDER: se a tatuadora confirmar, incluir um item sobre biossegurança
+        (material descartável, esterilização, licença sanitária), que passa muita confiança.
+      -->
+      <ul class="container pillars" aria-label="Como a Víbora Ink trabalha">
+        <li class="pillar reveal"><span class="pillar__n">i.</span><h3>Arte autoral</h3><p>Cada projeto é desenhado a partir da sua ideia, nunca copiado.</p></li>
+        <li class="pillar reveal" data-delay="1"><span class="pillar__n">ii.</span><h3>Atendimento próximo</h3><p>Conversa aberta do primeiro contato até o dia da sessão.</p></li>
+        <li class="pillar reveal" data-delay="2"><span class="pillar__n">iii.</span><h3>Planejamento</h3><p>Tamanho, local do corpo e detalhes alinhados antes de começar.</p></li>
+        <li class="pillar reveal" data-delay="3"><span class="pillar__n">iv.</span><h3>Pós-tatuagem</h3><p>Orientações de cuidado para uma cicatrização bonita.</p></li>
+      </ul>
+    </section>
+
+    <!-- ===================== 05 · PROMOÇÕES ===================== -->
     <section class="section promos" id="promocoes" aria-labelledby="promocoes-titulo">
       <div class="container">
         <div class="section-head section-head--split">
           <div>
-            <p class="eyebrow reveal"><span class="idx">04</span> Condições especiais</p>
+            <p class="eyebrow reveal"><span class="idx">05</span> Condições especiais</p>
             <h2 class="title reveal" id="promocoes-titulo">Promoções <em>ativas</em></h2>
           </div>
           <p class="section-head__aside reveal">Pacotes, rodízio e indicação: condições especiais para tatuar mais pagando menos. Confira as regras de cada uma antes de agendar.</p>
@@ -339,14 +361,14 @@
               </li>
             </ul>
 
-            <div class="rules reveal">
-              <p class="rules__title">Regras</p>
+            <details class="rules reveal">
+              <summary class="rules__title">Regras <span>ver condições</span></summary>
               <ul>
                 <li><strong>Incluso:</strong> Fineline, Blackwork, Sketch, Lettering, Pontilhismo e Cybertattoo.</li>
                 <li><strong>Pouco</strong> preenchimento sólido. <strong>Apenas</strong> preto.</li>
                 <li>Para demais estilos ou cores, sujeito a reajuste no valor.</li>
               </ul>
-            </div>
+            </details>
           </article>
 
           <!-- 02 · RODÍZIO DE TATTOO -->
@@ -381,15 +403,15 @@
               </li>
             </ul>
 
-            <div class="rules reveal">
-              <p class="rules__title">Regras</p>
+            <details class="rules reveal">
+              <summary class="rules__title">Regras <span>ver condições</span></summary>
               <ul>
                 <li><strong>Obrigatoriamente</strong> desenhos ou escritas simples, com pouquíssimo preenchimento sólido e sombreado.</li>
                 <li>Desenhos <strong>até 5 cm</strong>. *Uma mini tattoo tem 3 cm ou menos. Quanto maior e mais complexo o desenho, mais tempo ele leva.</li>
                 <li><strong>Incluso:</strong> Fineline, Blackwork, Sketch, Pontilhismo e Cybertattoo. <strong>Apenas</strong> preto.</li>
                 <li>Para demais estilos ou cores, sujeito a reajuste no valor.</li>
               </ul>
-            </div>
+            </details>
           </article>
 
           <!-- 03 · INDIQUE E GANHE -->
@@ -409,14 +431,14 @@
             </ol>
 
             <div class="referral__foot">
-              <div class="rules reveal">
-                <p class="rules__title">Regras</p>
+              <details class="rules reveal">
+                <summary class="rules__title">Regras <span>ver condições</span></summary>
                 <ul>
                   <li>Se o amigo indicado desistir ou não fizer a tatuagem, a tattoo prêmio é anulada: ele deve tatuar antes de você.</li>
                   <li>As tattoos prêmio não são cumulativas em um único orçamento: é uma por orçamento. Indicou 3 clientes e quer um só orçamento? Ganha uma tattoo prêmio. Fez 3 orçamentos variados? Ganha uma em cada.</li>
                   <li><strong>Incluso:</strong> Fineline, Blackwork, Sketch, Escrita, Pontilhismo e Cybertattoo. Pouco preenchimento sólido. <strong>Apenas</strong> preto.</li>
                 </ul>
-              </div>
+              </details>
               <button class="btn btn--primary reveal" data-contact="Olá! Quero indicar um amigo para tatuar com a Víbora Ink.">Indicar um amigo <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
             </div>
           </article>
@@ -424,119 +446,116 @@
       </div>
     </section>
 
-    <!-- ===================== 05 · EVENTOS ===================== -->
-    <section class="section events" id="eventos" aria-labelledby="eventos-titulo">
-      <div class="events__bg" aria-hidden="true" data-parallax="0.08">
-        <!-- PLACEHOLDER: foto real de um evento com tatuagem -->
-        <img src="assets/images/eventos-placeholder.svg" alt="" loading="lazy">
-      </div>
-      <div class="container events__inner">
+    <!-- ===================== 06 · ALÉM DO ESTÚDIO: EVENTOS, GUEST SPOT E PARCERIAS ===================== -->
+    <!--
+      Três frentes em abas, com um único formulário. Os campos de cada aba ficam em
+      <div class="form__group" data-for="...">; textos de botão e rótulos estão em script.js (TAB_COPY).
+    -->
+    <section class="section guest" id="parcerias" aria-labelledby="parcerias-titulo">
+      <div class="guest__word" id="guest-word" aria-hidden="true">Eventos</div>
+      <div class="container">
         <div class="section-head">
-          <p class="eyebrow reveal"><span class="idx">05</span> Contrate-me para eventos</p>
-          <h2 class="title title--lg reveal" id="eventos-titulo">Tatuagem para <em>eventos</em></h2>
-          <p class="section-head__sub reveal">A Víbora Ink pode ser contratada para levar a tatuagem ao seu evento, transformando o momento em uma lembrança que fica na pele.</p>
+          <p class="eyebrow reveal"><span class="idx">06</span> Além do estúdio</p>
+          <h2 class="title title--lg reveal" id="parcerias-titulo">Leve a Víbora <em>com você</em></h2>
         </div>
 
-        <ol class="steps steps--4">
-          <li class="step reveal"><span class="step__n">01</span><h3>Converse sobre o evento</h3><p>Você conta a proposta, o público e o formato.</p></li>
-          <li class="step reveal" data-delay="1"><span class="step__n">02</span><h3>Planejamento</h3><p>Definimos juntos estrutura, artes e logística.</p></li>
-          <li class="step reveal" data-delay="2"><span class="step__n">03</span><h3>Experiência</h3><p>A tatuagem vira parte da experiência dos convidados.</p></li>
-          <li class="step reveal" data-delay="3"><span class="step__n">04</span><h3>Tatuagem no evento</h3><p>Atendimento no dia, com todo o cuidado do estúdio.</p></li>
-        </ol>
+        <div class="tabs reveal" role="tablist" aria-label="Formas de trabalhar com a Víbora Ink">
+          <button class="tab" type="button" role="tab" id="tab-eventos" data-tab="eventos" aria-controls="painel-eventos" aria-selected="true">Eventos</button>
+          <button class="tab" type="button" role="tab" id="tab-guest" data-tab="guest" aria-controls="painel-guest" aria-selected="false">Guest spot</button>
+          <button class="tab" type="button" role="tab" id="tab-parcerias" data-tab="parcerias" aria-controls="painel-parcerias" aria-selected="false">Parcerias</button>
+        </div>
 
-        <div class="form-wrap glass reveal" id="form-eventos">
-          <div class="form-wrap__intro">
-            <h3 class="form-title">Contratar para meu evento</h3>
-            <p>Preencha os dados e a mensagem será preparada para envio direto à Víbora Ink.</p>
-          </div>
-          <form class="form" data-form="Evento" novalidate>
-            <div class="field"><label for="ev-nome">Nome</label><input id="ev-nome" name="Nome" type="text" autocomplete="name" required></div>
-            <div class="field"><label for="ev-whats">WhatsApp</label><input id="ev-whats" name="WhatsApp" type="tel" autocomplete="tel" inputmode="tel" required></div>
-            <div class="field"><label for="ev-tipo">Tipo de evento</label><input id="ev-tipo" name="Tipo de evento" type="text" placeholder="Festa, lançamento, feira..." required></div>
-            <div class="field"><label for="ev-data">Data</label><input id="ev-data" name="Data" type="date" required></div>
-            <div class="field"><label for="ev-local">Local</label><input id="ev-local" name="Local" type="text" required></div>
-            <div class="field"><label for="ev-qtd">Quantidade de pessoas</label><input id="ev-qtd" name="Quantidade de pessoas" type="number" min="1" inputmode="numeric"></div>
-            <div class="field field--full"><label for="ev-msg">Mensagem</label><textarea id="ev-msg" name="Mensagem" rows="4"></textarea></div>
-            <div class="form__foot field--full">
-              <button type="submit" class="btn btn--primary">Contratar para meu evento <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
-              <p class="form__status" role="status" aria-live="polite"></p>
+        <div class="guest__grid">
+          <div class="guest__intro">
+            <div class="panel" role="tabpanel" id="painel-eventos" aria-labelledby="tab-eventos">
+              <p class="eyebrow">Contrate-me para eventos</p>
+              <h3 class="panel__title">Tatuagem para eventos</h3>
+              <p>A Víbora Ink pode ser contratada para levar a tatuagem ao seu evento, transformando o momento em uma lembrança que fica na pele.</p>
+              <ol class="guest__steps">
+                <li><h4>Converse sobre o evento</h4><p>Você conta a proposta, o público e o formato.</p></li>
+                <li><h4>Planejamento</h4><p>Definimos juntos estrutura, artes e logística.</p></li>
+                <li><h4>Experiência</h4><p>A tatuagem vira parte da experiência dos convidados.</p></li>
+                <li><h4>Tatuagem no evento</h4><p>Atendimento no dia, com todo o cuidado do estúdio.</p></li>
+              </ol>
             </div>
-          </form>
-        </div>
-      </div>
-    </section>
 
-    <!-- ===================== 06 · PARCERIAS & COLLABS ===================== -->
-    <section class="section collabs" id="parcerias" aria-labelledby="parcerias-titulo">
-      <div class="container collabs__grid">
-        <div>
-          <p class="eyebrow reveal"><span class="idx">06</span> Parcerias / Collabs</p>
-          <h2 class="title reveal" id="parcerias-titulo">Parcerias <em>&amp;</em> collabs</h2>
-          <p class="reveal">Projetos em colaboração que unem a arte da tatuagem a outras linguagens. Se você tem uma ideia que conversa com o universo da Víbora Ink, vamos criar juntos.</p>
-          <button class="btn btn--ghost reveal" data-contact="Olá! Gostaria de propor uma parceria/collab com a Víbora Ink.">Propor uma parceria <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
-        </div>
-
-        <ul class="collabs__list" aria-label="Tipos de parceria">
-          <li class="reveal"><span>01</span>Marcas</li>
-          <li class="reveal"><span>02</span>Artistas</li>
-          <li class="reveal"><span>03</span>Criadores</li>
-          <li class="reveal"><span>04</span>Eventos</li>
-          <li class="reveal"><span>05</span>Projetos especiais</li>
-        </ul>
-      </div>
-
-      <!-- PLACEHOLDER: área para logos de parceiros reais. Remover o atributo hidden quando houver parceiros confirmados. -->
-      <div class="container partners" hidden>
-        <p class="eyebrow">Já colaboramos com</p>
-        <ul class="partners__logos">
-          <li><!-- <img src="assets/images/parceiro-01.svg" alt="Nome do parceiro"> --></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- ===================== 07 · GUEST SPOT ===================== -->
-    <section class="section guest" id="guest" aria-labelledby="guest-titulo">
-      <div class="guest__word" aria-hidden="true">Guest</div>
-      <div class="container guest__grid">
-        <div class="guest__intro">
-          <p class="eyebrow reveal"><span class="idx">07</span> Bora de guest?</p>
-          <h2 class="title title--lg reveal" id="guest-titulo">Guest <em>spot</em></h2>
-          <p class="reveal">Estúdios que desejam receber a Víbora Ink como artista convidada podem enviar o convite por aqui. Conte sobre o seu espaço, a cidade e o período que você imagina: cada proposta é analisada com atenção.</p>
-          <ul class="guest__points reveal">
-            <li>Estúdio e cidade</li>
-            <li>Período desejado</li>
-            <li>Estrutura e divulgação</li>
-          </ul>
-        </div>
-
-        <div class="guest__card reveal" id="form-guest">
-          <div class="guest__card-head">
-            <span>Convite</span>
-            <span>Guest spot · Víbora Ink</span>
-          </div>
-          <form class="form form--light" data-form="Guest Spot" novalidate>
-            <div class="field"><label for="gs-nome">Nome</label><input id="gs-nome" name="Nome" type="text" autocomplete="name" required></div>
-            <div class="field"><label for="gs-estudio">Estúdio</label><input id="gs-estudio" name="Estúdio" type="text" required></div>
-            <div class="field"><label for="gs-cidade">Cidade</label><input id="gs-cidade" name="Cidade" type="text" required></div>
-            <div class="field"><label for="gs-data">Data</label><input id="gs-data" name="Data" type="text" placeholder="Data ou período"></div>
-            <div class="field"><label for="gs-insta">Instagram</label><input id="gs-insta" name="Instagram" type="text" placeholder="@estudio"></div>
-            <div class="field"><label for="gs-contato">Contato</label><input id="gs-contato" name="Contato" type="text" placeholder="WhatsApp ou e-mail" required></div>
-            <div class="field field--full"><label for="gs-msg">Mensagem</label><textarea id="gs-msg" name="Mensagem" rows="3"></textarea></div>
-            <div class="form__foot field--full">
-              <button type="submit" class="btn btn--dark">Convidar para guest <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
-              <p class="form__status" role="status" aria-live="polite"></p>
+            <div class="panel" role="tabpanel" id="painel-guest" aria-labelledby="tab-guest">
+              <p class="eyebrow">Bora de guest?</p>
+              <h3 class="panel__title">Guest spot</h3>
+              <p>Estúdios que desejam receber a Víbora Ink como artista convidada podem enviar o convite por aqui. Conte sobre o seu espaço, a cidade e o período que você imagina: cada proposta é analisada com atenção.</p>
+              <ul class="guest__points">
+                <li>Estúdio e cidade</li>
+                <li>Período desejado</li>
+                <li>Estrutura e divulgação</li>
+              </ul>
             </div>
-          </form>
+
+            <div class="panel" role="tabpanel" id="painel-parcerias" aria-labelledby="tab-parcerias">
+              <p class="eyebrow">Parcerias / Collabs</p>
+              <h3 class="panel__title">Parcerias &amp; collabs</h3>
+              <p>Projetos em colaboração que unem a arte da tatuagem a outras linguagens. Se você tem uma ideia que conversa com o universo da Víbora Ink, vamos criar juntos.</p>
+              <ul class="guest__points" aria-label="Tipos de parceria">
+                <li>Marcas</li>
+                <li>Artistas</li>
+                <li>Criadores</li>
+                <li>Eventos</li>
+                <li>Projetos especiais</li>
+              </ul>
+              <!-- PLACEHOLDER: área para logos de parceiros reais. Remover o atributo hidden quando houver parceiros confirmados. -->
+              <div class="partners" hidden>
+                <p class="eyebrow">Já colaboramos com</p>
+                <ul class="partners__logos">
+                  <li><!-- <img src="assets/images/parceiro-01.svg" alt="Nome do parceiro"> --></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="guest__card reveal">
+            <div class="guest__card-head">
+              <span id="work-kind">Evento</span>
+              <span>Convite · Víbora Ink</span>
+            </div>
+            <form class="form" id="work-form" data-form="Evento" novalidate>
+              <div class="field"><label for="wk-nome">Nome</label><input id="wk-nome" name="Nome" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="wk-whats">WhatsApp</label><input id="wk-whats" name="WhatsApp" type="tel" autocomplete="tel" inputmode="tel" required></div>
+
+              <div class="form__group" data-for="eventos">
+                <div class="field"><label for="ev-tipo">Tipo de evento</label><input id="ev-tipo" name="Tipo de evento" type="text" placeholder="Festa, lançamento, feira..." required></div>
+                <div class="field"><label for="ev-data">Data</label><input id="ev-data" name="Data" type="date" required></div>
+                <div class="field"><label for="ev-local">Local</label><input id="ev-local" name="Local" type="text" required></div>
+                <div class="field"><label for="ev-qtd">Quantidade de pessoas</label><input id="ev-qtd" name="Quantidade de pessoas" type="number" min="1" inputmode="numeric"></div>
+              </div>
+
+              <div class="form__group" data-for="guest">
+                <div class="field"><label for="gs-estudio">Estúdio</label><input id="gs-estudio" name="Estúdio" type="text" required></div>
+                <div class="field"><label for="gs-cidade">Cidade</label><input id="gs-cidade" name="Cidade" type="text" required></div>
+                <div class="field"><label for="gs-data">Período</label><input id="gs-data" name="Período" type="text" placeholder="Data ou período"></div>
+                <div class="field"><label for="gs-insta">Instagram</label><input id="gs-insta" name="Instagram" type="text" placeholder="@estudio"></div>
+              </div>
+
+              <div class="form__group" data-for="parcerias">
+                <div class="field"><label for="pc-marca">Marca ou projeto</label><input id="pc-marca" name="Marca ou projeto" type="text" required></div>
+                <div class="field"><label for="pc-insta">Instagram</label><input id="pc-insta" name="Instagram" type="text" placeholder="@perfil"></div>
+              </div>
+
+              <div class="field field--full"><label for="wk-msg">Mensagem</label><textarea id="wk-msg" name="Mensagem" rows="3"></textarea></div>
+              <div class="form__foot field--full">
+                <button type="submit" class="btn btn--dark"><span id="work-submit">Contratar para meu evento</span> <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+                <p class="form__status" role="status" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ===================== 08 · COMO FUNCIONA ===================== -->
+    <!-- ===================== 07 · COMO FUNCIONA ===================== -->
     <section class="section process" id="processo" aria-labelledby="processo-titulo">
       <div class="container">
         <div class="section-head section-head--split">
           <div>
-            <p class="eyebrow reveal"><span class="idx">08</span> Processo</p>
+            <p class="eyebrow reveal"><span class="idx">07</span> Processo</p>
             <h2 class="title reveal" id="processo-titulo">Como <em>funciona</em></h2>
           </div>
           <!-- PLACEHOLDER: ajustar os textos das etapas ao processo real da Víbora Ink -->
@@ -552,35 +571,11 @@
       </div>
     </section>
 
-    <!-- ===================== 09 · FEEDBACK ===================== -->
-    <section class="section feedback" id="feedback" aria-labelledby="feedback-titulo">
-      <div class="container feedback__inner">
-        <p class="eyebrow reveal"><span class="idx">09</span> Feedbacks / Sugestões</p>
-        <h2 class="title reveal" id="feedback-titulo">Sua experiência <em>importa</em></h2>
-        <p class="reveal">Já fez uma tatuagem com a Víbora Ink? Conte como foi. Seu retorno ajuda a tornar cada atendimento ainda melhor.</p>
-        <div class="feedback__actions reveal">
-          <button class="btn btn--primary" data-contact="Olá! Gostaria de deixar um feedback sobre minha tatuagem:">Deixar um feedback</button>
-          <button class="btn btn--ghost" data-contact="Olá! Tenho uma sugestão para a Víbora Ink:">Enviar uma sugestão</button>
-        </div>
-
-        <!--
-          DEPOIMENTOS: componente pronto para avaliações REAIS de clientes.
-          Remover o atributo hidden e duplicar <figure class="testimonial"> para cada avaliação autorizada.
-        -->
-        <div class="testimonials" hidden>
-          <figure class="testimonial">
-            <blockquote><p>Texto da avaliação real do cliente.</p></blockquote>
-            <figcaption>Nome do cliente <span>· tatuagem realizada</span></figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== 10 · FAQ ===================== -->
+    <!-- ===================== 08 · FAQ ===================== -->
     <section class="section faq" id="faq" aria-labelledby="faq-titulo">
       <div class="container faq__grid">
         <div>
-          <p class="eyebrow reveal"><span class="idx">10</span> Dúvidas</p>
+          <p class="eyebrow reveal"><span class="idx">08</span> Dúvidas</p>
           <h2 class="title reveal" id="faq-titulo">Perguntas <em>frequentes</em></h2>
           <p class="reveal">Não encontrou sua dúvida? <a href="#contato" class="link-inline">Fale com a Víbora</a>.</p>
         </div>
@@ -599,7 +594,7 @@
       </div>
     </section>
 
-    <!-- ===================== 11 · CTA FINAL ===================== -->
+    <!-- ===================== CTA FINAL ===================== -->
     <section class="final" id="agendar" aria-labelledby="final-titulo">
       <div class="final__bg" aria-hidden="true" data-parallax="0.12">
         <!-- PLACEHOLDER: fotografia/textura da marca -->
@@ -617,14 +612,16 @@
       </div>
     </section>
 
-    <!-- ===================== 12 · CONTATO ===================== -->
+    <!-- ===================== 09 · CONTATO ===================== -->
     <section class="section contact" id="contato" aria-labelledby="contato-titulo">
       <div class="container contact__grid">
         <div>
-          <p class="eyebrow reveal"><span class="idx">12</span> Contato</p>
+          <p class="eyebrow reveal"><span class="idx">09</span> Contato</p>
           <h2 class="title title--lg reveal" id="contato-titulo">Fale com a <em>Víbora</em></h2>
           <p class="reveal">Agendamentos, orçamentos, eventos, parcerias ou convites de guest: escolha o canal que preferir.</p>
           <button class="btn btn--primary reveal" data-contact="Olá, Víbora Ink!">Entrar em contato <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <!-- Feedbacks / Sugestões -->
+          <p class="contact__feedback reveal">Já tatuou com a Víbora Ink? <button type="button" class="link-inline" data-contact="Olá! Gostaria de deixar um feedback sobre minha tatuagem:">Deixe um feedback</button> ou <button type="button" class="link-inline" data-contact="Olá! Tenho uma sugestão para a Víbora Ink:">envie uma sugestão</button>.</p>
         </div>
 
         <ul class="channels">
@@ -686,6 +683,12 @@
 
   <!-- Botão fixo de agendamento (somente celular) -->
   <a href="#agendar" class="sticky-cta" id="sticky-cta">Agendar tatuagem <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+
+  <!-- Serpente de progresso: o traço se desenha na lateral conforme a rolagem -->
+  <div class="serpent" aria-hidden="true">
+    <svg viewBox="0 0 20 1000" preserveAspectRatio="none"><path d="M10 0Q18 62.5 10 125T10 250T10 375T10 500T10 625T10 750T10 875T10 1000" fill="none" stroke="currentColor" stroke-width="1" vector-effect="non-scaling-stroke"/></svg>
+    <i class="serpent__head"></i>
+  </div>
 
   <!-- ===================== LIGHTBOX ===================== -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização do trabalho" hidden>
